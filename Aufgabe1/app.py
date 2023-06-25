@@ -18,8 +18,8 @@ def webapp():
         if (len(ipLookup) == 1):
            flash("No matching IP was found")
         else:
-            latitude, longitude = ipLookup
-            flash("latitude: "+latitude+" | longitude: "+longitude)
+            ip, latitude, longitude = ipLookup
+            flash("latitude: "+str(latitude)+" | longitude: "+str(longitude))
     return render_template("webapp.html")
 
 @app.route("/API", methods=["POST", "GET"])
