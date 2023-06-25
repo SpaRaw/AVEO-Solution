@@ -1,0 +1,20 @@
+{% extends "master.html" %}
+{% block title %}WebApp{% endblock %}
+{% block content %}
+    <div id="flash">
+{% with messages = get_flashed_messages() %}
+   {% if messages %}
+      {% for message in messages %}
+         {{ message }}
+      {% endfor %}
+   {% endif %}
+{% endwith %}
+        &nbsp;
+    </div>
+    <div>
+        <form method="POST" action="/WebAPP">
+            <input type="text" id="input" placeholder="Name" name="name">
+            <input type="submit" value="check">
+        </form>
+    </div>
+{% endblock %}

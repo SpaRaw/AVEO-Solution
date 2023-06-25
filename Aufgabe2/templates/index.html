@@ -1,0 +1,34 @@
+{% extends "master.html" %}
+{% block title %}Aufgabe 2 Übersicht{% endblock %}
+{% block content %}
+    <p>
+        <h3>Aufgabe</h3>
+        Erstelle eine eigenständige und einfache Webanwendung/Web-API, die das wahrscheinliche
+        Geschlecht für einen bestimmten Vornamen ausgeben kann. Du kannst dir die UI als eine einzelne
+        Textzeile vorstellen, die beim Abschicken das Geschlecht (male/female/unknown) der Eingabe
+        ermittelt und die Ergebnisse zurückgibt.
+    </p>
+    <p>
+        <h3>Test Anleitung</h3>
+        <BR>
+        WebApp
+        <ul>
+            <li>Navigiere zu <a href="/WebAPP">/WebApp</a></li>
+            <li>In das Feld mit dem Platzhalter "Name" den Namen eintragen</li>
+            <li>Auf den Button "check" clicken</li>
+            <li>Das Ergebnis wird über den Eingabe Feldern Angezeigt</li>
+        </ul>
+        API
+        <ul>
+            <li>URL: /API?name="Name"</li>
+            <li>GET Request</li>
+            <li>JSON als Returnwert </li>
+        </ul>
+    </p>
+    <p>
+        <h3>Daten</h3>
+        Die Daten stammen von dem github Account pilipperemy, das Repository <a href="https://github.com/philipperemy/name-dataset">name-dataset</a>. Dieses beinhaltet ca. 730 000 Vornamen.
+    </p>
+
+
+{% endblock %}
