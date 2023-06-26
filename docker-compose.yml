@@ -1,9 +1,9 @@
 services:
   aufgabe1:
-    build: Aufgabe1
+    build: /Aufgabe1
     ports:
       - "8080:5000"
   aufgabe2:
-    build: Aufgabe2
+    build: /Aufgabe2
     ports:
       - "8081:5000"

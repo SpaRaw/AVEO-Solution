@@ -1,8 +1,12 @@
 import csv
 import sqlite3
 from typing import Dict
+import zipfile
 
 class DataHandler:
+    def __init__(self):
+        with zipfile.ZipFile("Data/ip.zip", 'r') as zip_ref:
+            zip_ref.extractall("/Data")
 
     def getCoordinates(self, ip: int) -> Dict:
         connection = sqlite3.connect("Data/ip.db")
