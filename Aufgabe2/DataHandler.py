@@ -1,10 +1,12 @@
 import sqlite3
 import json
 from typing import Literal, Tuple
+import zipfile
 
 class DataHandler():
     def __init__(self):
-        pass
+        with zipfile.ZipFile("Data/first_names.zip", 'r') as zip_ref:
+            zip_ref.extractall("/Data")
 
     def loadDataIntoDataBase(self) -> None:
         connection = sqlite3.connect("names.db")
