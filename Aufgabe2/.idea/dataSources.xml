@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="names" uuid="a83bff77-be59-45f1-bf7a-95188fe59518">
+    <data-source source="LOCAL" name="Names.db" uuid="e7b56d38-e59f-418c-b58f-90535bc3d0cc">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Korbinian.PROVATOR\Documents\GitHub\AVEO-Solution-Bewerbung\Aufgabe2\names.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/Data/first_names/Names.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

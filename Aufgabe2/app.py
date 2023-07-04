@@ -4,6 +4,7 @@ import DataHandler
 app = Flask(__name__)
 app.secret_key = '93fa92ddbc680464e4d294cb9b0a1ba5'
 dh = DataHandler.DataHandler()
+
 @app.route("/")
 def main():
     return render_template("index.html")
