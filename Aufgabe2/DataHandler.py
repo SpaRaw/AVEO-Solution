@@ -9,7 +9,7 @@ class DataHandler():
             zip_ref.extractall("/Data")
 
     def loadDataIntoDataBase(self) -> None:
-        connection = sqlite3.connect("names.db")
+        connection = sqlite3.connect("first_names.db")
         cursor = connection.cursor()
 
         with open("Data/first_names.json", encoding="utf8") as file:
@@ -35,7 +35,7 @@ class DataHandler():
             connection.close()
 
     def getNameInformation(self, name: Literal) -> Tuple:
-        connection = sqlite3.connect("names.db")
+        connection = sqlite3.connect("first_names.db")
         cursor = connection.cursor()
         result = cursor.execute(f"Select * From Names where name='{name}'").fetchone()
         if result is None:
